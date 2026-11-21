@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "creepercat",
+  "version": "${version}",
+  "name": "Creeper Slayer Cat",
+  "description": "Combat cats tear creepers in half, and players can transform into evolving cats.",
+  "authors": ["Example"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.creepercat.CreeperCatMod"],
+    "client": ["com.example.creepercat.client.CreeperCatClient"]
+  },
+  "mixins": [
+    "creepercat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": "~1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
