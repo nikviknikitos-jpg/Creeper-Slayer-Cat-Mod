@@ -29,7 +29,7 @@ public class CatPlayerModelRenderer {
         matrices.scale(scale, scale, scale);
 
         // battle roar animation
-        int anim = player.getPersistentData().getInt(CatPlayerState.KEY_ANIM_TICKS);
+        int anim = CatPlayerState.getAnimTicks(player);
         if (anim > 0) {
             float k = anim / 40f;
             matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(-85f * k));
